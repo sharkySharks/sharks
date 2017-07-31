@@ -4,7 +4,8 @@ import requests
 from flask import Flask, render_template
 
 
-app = Flask(__name__, template_folder='.', instance_relative_config=True)
+app = Flask(__name__, instance_path=os.path.join(os.path.abspath(os.curdir), 'instance'),
+            template_folder='.', instance_relative_config=True)
 app.config.from_pyfile('config.py')
 
 
