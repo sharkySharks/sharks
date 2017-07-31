@@ -3,16 +3,14 @@ import os
 import requests
 from flask import Flask, render_template
 
-app = Flask(__name__, instance_path=os.path.join(os.path.abspath(os.curdir), 'instance'),
-            template_folder='.', instance_relative_config=True)
-print('instance path: {}'.format(os.path.join(os.path.abspath(os.curdir), 'instance')))
-app.config.from_pyfile('config.py')
+app = Flask(__name__, template_folder='.')
+app.config.from_envvar('SHARK_APP_CONFIG')
 
 
 @app.route('/')
 def index():
     params = {
-        "api_key": os.environ.get("GIPHY_API_KEY") if os.environ.get("GIPHY_API_KEY") else app.config["GIPHY_API_KEY"],
+        "api_key": app.config["GIPHY_API_KEY"],
         "tag": "sharks",
         "rating": "g",
         "fmt": "json"
