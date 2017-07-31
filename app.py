@@ -1,15 +1,17 @@
+import os
+
 import requests
 from flask import Flask, render_template
 
-from config import API_KEY
 
-app = Flask(__name__, template_folder='.')
+app = Flask(__name__, template_folder='.', instance_relative_config=True)
+app.config.from_pyfile('config.py')
 
 
 @app.route('/')
 def index():
     params = {
-        "api_key": API_KEY,
+        "api_key": os.environ.get("GIPHY_API_KEY") if os.environ.get("GIPHY_API_KEY") else app.config["GIPHY_API_KEY"],
         "tag": "sharks",
         "rating": "g",
         "fmt": "json"
