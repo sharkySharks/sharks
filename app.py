@@ -4,13 +4,12 @@ import requests
 from flask import Flask, render_template
 
 app = Flask(__name__, template_folder='.')
-app.config.from_envvar('SHARK_APP_CONFIG')
 
 
 @app.route('/')
 def index():
     params = {
-        "api_key": app.config["GIPHY_API_KEY"],
+        "api_key": os.environ.get("GIPHY_API_KEY"),
         "tag": "sharks",
         "rating": "g",
         "fmt": "json"
