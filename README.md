@@ -4,7 +4,7 @@ Random shark gifs
 ### Getting started
 To get started you will need to make a free account with giphy in order to get an API key. More on that [here](https://developers.giphy.com/docs/).
 
-Make this folder/file at the root of the repo: `instance/config.py`, and add `API_KEY = your-api-key-from-giphy`.
+Add your API key to your shell environment variables as so: `GIPHY_API_KEY = your-api-key-from-giphy`.
 
 Start up a virtual environment and install dependencies:
 ```
