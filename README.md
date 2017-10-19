@@ -58,3 +58,4 @@ This will be enough to get you started and exploring RSI.
 - [Kubernetes Tutorials](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
 - [Helm Docs](https://docs.helm.sh/using_helm/#quickstart-guide)
 - [OpenShift](https://docs.openshift.org/latest/getting_started/index.html)
+- Books: _DevOps With OpenShift_ & _OpenShift for Developers_
