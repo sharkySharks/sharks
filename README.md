@@ -38,10 +38,10 @@ Go to localhost:5000 to see the app running in your local browser.
 ***
 
 ## RSI Onboarding
-Rackspace Service Infrastructure (RSI) is a common internal platform for automating deployment, scaling, and management of containerized applications. The system is built using [OpenShift](https://docs.openshift.org/latest/welcome/index.html), [Kubernetes](https://kubernetes.io/docs/home/), and [Docker](https://docs.docker.com/) and is available for use at the following url: https://rsi.rackspace.net.
+Rackspace Service Infrastructure (RSI) is a common internal platform for automating deployment, scaling, and management of containerized applications. The system is built using [OpenShift](https://docs.openshift.org/latest/welcome/index.html), [Kubernetes](https://kubernetes.io/docs/home/), and [Docker](https://docs.docker.com/).
 
 ### Getting Started
-If you are not familiar with [Docker](https://docs.docker.com/), start learning how Docker works. There are tutorial resources below. Create your own simple app or fork this repo to deploy to RSI. Get the app running in a Docker container, put your app in the internal Github (you are there now), and then go to the RSI link above to setup your RSI app.
+If you are not familiar with [Docker](https://docs.docker.com/), start learning how Docker works. There are tutorial resources below. Create your own simple app or fork this repo to deploy to RSI. Get the app running in a Docker container, put your app in the internal Github, and then go to RSI to setup your RSI app.
 
 **NOTE:** SSH is not enabled for authenticating your app between GitHub and RSI, so use a [personal access token](https://github.com/blog/1509-personal-api-tokens) instead.
 
@@ -49,20 +49,12 @@ Once you have your app running in RSI, you can play around with different config
 
 Understanding how [Kubernetes](https://github.com/kubernetes) works is fundamental to understanding OpenShift, so read the docs or go through the Kubernetes tutorial in the resource list below. Once you have a basic understanding of Kubernetes, you can dive into [OpenShift](https://docs.openshift.org/latest/getting_started/index.html) to specifically see how RSI is working. There is a pdf version of a book for devs learning OpenShift listed in the resource list below.
 
-The RSI team is using [Helm charts](https://docs.helm.sh/developing_charts/) to manage different build packages. From a QE perspective, we are looking to create Helm charts for automating different types of test builds and CICD pipelines. So become familiar with how Helm charts are built and organized. To see examples of different charts, check out the Tesla charts repo in the resource list below.
+The RSI team is using [Helm charts](https://docs.helm.sh/developing_charts/) to manage different build packages. From a QE perspective, we are looking to create Helm charts for automating different types of test builds and CICD pipelines. So become familiar with how Helm charts are built and organized.
 
 This will be enough to get you started and exploring RSI.
 
 ### Resources
-- [Tesla Charts](https://github.rackspace.com/tesla/charts)
-    + Repo for storing OpenShift-compatible Helm charts for RSI apps
-- [RSI Organization](https://github.rackspace.com/rsi)
-    + Many different repositories for building up RSI.
-- [RSI Wiki](https://one.rackspace.com/pages/viewpage.action?title=RSI&spaceKey=SRE)
 - [Docker Tutorials](https://www.youtube.com/playlist?list=PLkA60AVN3hh_6cAz8TUGtkYbJSL2bdZ4h)
 - [Kubernetes Tutorials](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
 - [Helm Docs](https://docs.helm.sh/using_helm/#quickstart-guide)
 - [OpenShift](https://docs.openshift.org/latest/getting_started/index.html)
-- RSI Slack channel is #rsi
-    + Contact this channel if you need access to something
-    + Pinned in the RSI Slack channel is a helpful book: OpenShift_for_Developers_Red_Hat_pdf
