@@ -27,7 +27,7 @@ Install [Docker](https://docs.docker.com/engine/installation/).
 
 Create an image from the Dockerfile and run the following commands to build the image:
 ```
-docker build -t sharks:v1.0                            tag the image at version 1.0
+docker build -t sharks:v1.0 .                          tag the image at version 1.0
 docker images                                          list all your local images
 docker run -d -p 5000:5000 sharks:v1.0 <image id>      run the app on port 5000
 docker ps                                              check container is running app
