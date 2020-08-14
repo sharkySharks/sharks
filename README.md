@@ -12,13 +12,13 @@ Add your API key to your shell environment variables:
 
 Start up a virtual environment and install dependencies:
 ```
-virtualenv ENV
+python3 -m venv ENV
 source ENV/bin/activate
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 Run the app with the following command:
-`python app.py`
+`python3 app.py`
 
 Go to localhost:5000 to see the app running in your local browser.
 
