@@ -1,10 +1,7 @@
-# Getting Started
-- [Sharks Repo](#random-shark-gifs)
-- [RSI Onboarding](#rsi-onboarding)
+# Sharks
+![sharks](static/sharks.gif)
 
-***
-
-## Random Shark Gifs
+## Getting Started
 To get started you will need to make a free account with giphy in order to get an API key. More on that [here](https://developers.giphy.com/docs/).
 
 Add your API key to your shell environment variables or to a `.env` file: 
