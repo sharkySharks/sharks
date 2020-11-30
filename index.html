@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Random Sharks For Your Pleasure</title>
+    <title>Sharks</title>
     <link rel="stylesheet" type="text/css" href="static/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
 </head>
 <body>
     <div class="container">
-        <h2>Sharks</h2>
-        <div>
+        <h1>Sharks</h1>
+        <div id="new_shark">
+            <form method="post" action="/">
+                <input type="submit" name="new_shark" value="New Shark">
+            </form>
+        </div>
+        <div id="shark_img">
             <img src="{{image_url}}">
         </div>
     </div>

@@ -5,11 +5,28 @@ html {
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 div.container {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 150px;
 }
-div.container h2 {
-    font-size: 50px;
+div.container h1 {
+    font-size: 75px;
+}
+
+#new_shark {
+    margin: 50px;
+}
+
+#new_shark input[type=submit] {
+    padding:5px 15px; 
+    color: #ccc;
+    font-weight: bold;
+    font-size: 30px;
+    background: black; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
 }

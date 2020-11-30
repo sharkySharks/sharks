@@ -100,8 +100,9 @@ ENV/
 ### Example user template template
 ### Example user template
 
-# IntelliJ project files
+# editor files
 ../.idea
 *.iml
 out
 gen
+.vscode
